@@ -19,10 +19,9 @@ app.use(cors());
 
 
 
-// app.get('/', (req, res) => {
-//     rollbar.info("HTML served successfully");
-//     res.sendFile(path.join(__dirname, '/index.html'))
-// })
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '..client/index.html'))
+})
 
 // app.get('/api/students', (req, res) => {
 //     rollbar.info("Someone got the list of students to load on page load");
